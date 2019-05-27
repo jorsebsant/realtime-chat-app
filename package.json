@@ -5,6 +5,11 @@
   "repository": "git@github.com:jorsebsant/realtime-chat-app.git",
   "author": "Jorge Santamaria <jorsebsant@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.19.0",
