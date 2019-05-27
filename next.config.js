@@ -9,7 +9,6 @@ module.exports = {
       acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
       return acc;
     }, {});
-    
     config.plugins.push(new webpack.DefinePlugin(env));
     
     return config;
